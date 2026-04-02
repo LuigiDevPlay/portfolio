@@ -1,0 +1,1690 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Luis Martínez | Desarrollador Full Stack y Creador de Contenido en LuigiDevPlay. Proyectos en Python, JavaScript y más."
+    />
+    <meta name="keywords" content="Luis Martinez, LuigiDevPlay, Programador, Portafolio" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Luis Martínez | LuigiDevPlay</title>
+  </head>
+
+  <body
+    class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300"
+  >
+    <div
+      class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none"
+    >
+      <div
+        class="absolute top-[-10%] left-[-10%] w-125 h-125 bg-blue-600/20 rounded-full blur-[120px]"
+      ></div>
+      <div
+        class="absolute bottom-[10%] right-[-5%] w-100 h-100 bg-purple-600/15 rounded-full blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="fixed w-full top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-white/10 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4 max-w-7xl">
+        <nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+          <a href="#hero" class="flex items-center group cursor-pointer select-none">
+            <div class="relative">
+              <span
+                class="text-2xl font-black bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent tracking-tighter"
+              >
+                LuigiDevPlay
+              </span>
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-blue-600 to-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
+            <span
+              class="text-blue-600 text-2xl ml-1.5 group-hover:rotate-360 transition-transform duration-700 ease-in-out"
+            >
+              <i class="fa-solid fa-circle-notch"></i>
+            </span>
+          </a>
+
+          <ul class="hidden md:flex items-center space-x-2">
+            <li>
+              <a
+                href="#features"
+                class="group relative px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                <span>Inicio</span>
+                <span
+                  class="absolute inset-x-4 bottom-0 h-0.5 scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="group relative px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                <span>Sobre mí</span>
+                <span
+                  class="absolute inset-x-4 bottom-0 h-0.5 scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="group relative px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                <span>Habilidades</span>
+                <span
+                  class="absolute inset-x-4 bottom-0 h-0.5 scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="group relative px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                <span>Proyectos</span>
+                <span
+                  class="absolute inset-x-4 bottom-0 h-0.5 scale-x-0 bg-blue-600 transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+            </li>
+
+            <li class="pl-4">
+              <a
+                href="#contact"
+                class="relative inline-flex items-center justify-center px-6 py-2.5 overflow-hidden font-bold text-white transition-all duration-300 bg-blue-600 rounded-xl group hover:bg-linear-to-r hover:from-blue-600 hover:to-purple-600 shadow-lg shadow-blue-500/30 hover:shadow-purple-500/30 hover:-translate-y-0.5 active:scale-95"
+              >
+                <span class="relative">Contacto</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="flex items-center space-x-3">
+            <button
+              id="themeToggle"
+              aria-label="Cambiar tema"
+              class="relative p-3 rounded-2xl bg-transparent dark:bg-transparent text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-all duration-300 group overflow-hidden cursor-pointer"
+            >
+              <span
+                class="absolute inset-0 bg-linear-to-tr from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity"
+              ></span>
+
+              <div class="relative flex items-center justify-center w-6 h-6">
+                <i
+                  class="fa-solid fa-moon text-xl absolute transition-all duration-500 ease-in-out dark:rotate-90 dark:scale-0 dark:opacity-0 group-hover:scale-110"
+                ></i>
+
+                <i
+                  class="fa-solid fa-sun text-xl absolute transition-all duration-500 ease-in-out rotate--90 scale-0 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100 group-hover:text-yellow-400"
+                ></i>
+              </div>
+            </button>
+
+            <button
+              class="md:hidden relative p-3 rounded-2xl bg-transparent transition-all group active:scale-90"
+              id="menuToggle"
+              aria-label="Abrir menú"
+            >
+              <span
+                class="absolute inset-0 bg-blue-500/5 dark:bg-white/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity"
+              ></span>
+
+              <div class="relative w-6 h-5 flex flex-col justify-between items-end">
+                <span
+                  class="w-full h-0.5 bg-linear-to-r from-blue-600 to-blue-400 rounded-full transition-all duration-300 group-hover:translate-x-1"
+                ></span>
+
+                <span
+                  class="w-2/3 h-0.5 bg-gray-600 dark:bg-gray-400 rounded-full transition-all duration-300 group-hover:w-full"
+                ></span>
+
+                <span
+                  class="w-full h-0.5 bg-linear-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-300 group-hover:-translate-x-1"
+                ></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-lg z-60 transform translate-x-full transition-transform duration-500 md:hidden"
+    >
+      <div class="container mx-auto px-6 h-full flex flex-col">
+        <div
+          class="flex justify-between items-center py-6 border-b border-gray-100 dark:border-white/10"
+        >
+          <div class="flex items-center">
+            <span
+              class="text-xl font-extrabold bg-linear-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent"
+            >
+              LuigiProGame
+            </span>
+            <span class="text-blue-600 text-2xl ml-1">○</span>
+          </div>
+
+          <button
+            id="closeMenu"
+            class="p-2 w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300"
+          >
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+        </div>
+
+        <ul class="flex-1 flex flex-col justify-center space-y-3 w-full">
+          <li class="w-full">
+            <a
+              href="#features"
+              class="group flex items-center p-4 rounded-xl bg-gray-50/50 dark:bg-white/5 border border-transparent hover:border-blue-500/30 hover:bg-white dark:hover:bg-white/10 transition-all duration-300"
+            >
+              <span
+                class="font-mono text-blue-600 dark:text-blue-400 mr-3 text-lg opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <i class="fa-solid fa-code"></i>
+              </span>
+
+              <div class="flex items-center">
+                <span
+                  class="text-xl font-bold tracking-tight text-gray-700 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                >
+                  inicio.exe
+                </span>
+                <span
+                  class="ml-2 w-2 h-5 bg-blue-600 animate-pulse opacity-0 group-hover:opacity-100"
+                ></span>
+              </div>
+
+              <span
+                class="ml-auto text-[10px] font-mono text-gray-400 dark:text-gray-500 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-all"
+              >
+                // run_showcase
+              </span>
+            </a>
+          </li>
+
+          <li class="w-full">
+            <a
+              href="#about"
+              class="group flex items-center p-4 rounded-xl bg-gray-50/50 dark:bg-white/5 border border-transparent hover:border-blue-500/30 hover:bg-white dark:hover:bg-white/10 transition-all duration-300"
+            >
+              <span
+                class="font-mono text-purple-500 mr-3 text-lg opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <i class="fa-solid fa-user-gear"></i>
+              </span>
+
+              <div class="flex items-center">
+                <span
+                  class="text-xl font-bold tracking-tight text-gray-700 dark:text-gray-200 group-hover:text-purple-500 transition-colors"
+                >
+                  sobre_mi.py
+                </span>
+                <span
+                  class="ml-2 w-2 h-5 bg-purple-500 animate-pulse opacity-0 group-hover:opacity-100"
+                ></span>
+              </div>
+
+              <span
+                class="ml-auto text-[10px] font-mono text-gray-400 dark:text-gray-500 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-all"
+              >
+                // view_profile
+              </span>
+            </a>
+          </li>
+
+          <li class="w-full">
+            <a
+              href="#skills"
+              class="group flex items-center p-4 rounded-xl bg-gray-50/50 dark:bg-white/5 border border-transparent hover:border-blue-500/30 hover:bg-white dark:hover:bg-white/10 transition-all duration-300"
+            >
+              <span
+                class="font-mono text-yellow-500 mr-3 text-lg opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <i class="fa-solid fa-terminal"></i>
+              </span>
+
+              <div class="flex items-center">
+                <span
+                  class="text-xl font-bold tracking-tight text-gray-700 dark:text-gray-200 group-hover:text-yellow-500 transition-colors"
+                >
+                  habilidades.js
+                </span>
+                <span
+                  class="ml-2 w-2 h-5 bg-yellow-500 animate-pulse opacity-0 group-hover:opacity-100"
+                ></span>
+              </div>
+
+              <span
+                class="ml-auto text-[10px] font-mono text-gray-400 dark:text-gray-500 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-all"
+              >
+                // tech_stack
+              </span>
+            </a>
+          </li>
+
+          <li class="w-full">
+            <a
+              href="#projects"
+              class="group flex items-center p-4 rounded-xl bg-gray-50/50 dark:bg-white/5 border border-transparent hover:border-blue-500/30 hover:bg-white dark:hover:bg-white/10 transition-all duration-300"
+            >
+              <span
+                class="font-mono text-emerald-500 mr-3 text-lg opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <i class="fa-solid fa-folder-open"></i>
+              </span>
+
+              <div class="flex items-center">
+                <span
+                  class="text-xl font-bold tracking-tight text-gray-700 dark:text-gray-200 group-hover:text-emerald-500 transition-colors"
+                >
+                  proyectos.git
+                </span>
+                <span
+                  class="ml-2 w-2 h-5 bg-emerald-500 animate-pulse opacity-0 group-hover:opacity-100"
+                ></span>
+              </div>
+
+              <span
+                class="ml-auto text-[10px] font-mono text-gray-400 dark:text-gray-500 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-all"
+              >
+                // my_work
+              </span>
+            </a>
+          </li>
+
+          <li class="w-full">
+            <a
+              href="#contact"
+              class="group flex items-center p-4 rounded-xl bg-blue-600/10 dark:bg-blue-600/20 border border-blue-600/20 hover:border-blue-600 hover:bg-blue-600 transition-all duration-300"
+            >
+              <span
+                class="font-mono text-blue-600 dark:text-blue-400 mr-3 text-lg group-hover:text-white transition-colors"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+              </span>
+
+              <div class="flex items-center">
+                <span
+                  class="text-xl font-bold tracking-tight text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors"
+                >
+                  contacto.sh
+                </span>
+                <span
+                  class="ml-2 w-2 h-5 bg-white animate-pulse opacity-0 group-hover:opacity-100"
+                ></span>
+              </div>
+
+              <span
+                class="ml-auto text-[10px] font-mono text-blue-400 dark:text-blue-500 group-hover:text-blue-200 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-all"
+              >
+                // sudo_send
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <div
+          class="py-10 border-t border-gray-100 dark:border-white/5 bg-gray-50/50 dark:bg-black/20 mt-auto select-none"
+        >
+          <p
+            class="text-center text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 mb-6"
+          >
+            Social Connect
+          </p>
+
+          <div class="flex justify-center items-center gap-5">
+            <a
+              href="https://github.com/LuigiDevPlay"
+              target="_blank"
+              aria-label="GitHub"
+              class="group flex items-center justify-center w-12 h-12 rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-blue-500/50 hover:text-blue-600 transition-all duration-300 shadow-sm active:scale-90"
+            >
+              <i class="fa-brands fa-github text-xl"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/luigi-martinez-a1b579387/"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="group flex items-center justify-center w-12 h-12 rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 shadow-sm active:scale-90"
+            >
+              <i class="fa-brands fa-linkedin-in text-xl"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@luigiDevPlay"
+              target="_blank"
+              aria-label="YouTube"
+              class="group flex items-center justify-center w-12 h-12 rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-red-600 hover:text-red-600 transition-all duration-300 shadow-sm active:scale-90"
+            >
+              <i class="fa-brands fa-youtube text-xl"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/luigidevplay/"
+              target="_blank"
+              aria-label="Instagram"
+              class="group flex items-center justify-center w-12 h-12 rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-pink-500 hover:text-pink-500 transition-all duration-300 shadow-sm active:scale-90"
+            >
+              <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Hero -->
+    <section id="hero" class="min-h-screen flex items-center pt-24 pb-16 relative overflow-hidden">
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none"
+      >
+        <div
+          class="absolute top-0 left-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px] animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full blur-[120px]"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto text-center px-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold mb-6 animate-fade-in"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+              ></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            DISPONIBLE PARA PROYECTOS 2026
+          </div>
+
+          <h1
+            class="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-none text-gray-900 dark:text-white"
+          >
+            El
+            <span
+              class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent italic"
+              >Full Stack</span
+            ><br />
+            Que Tu Web Necesita
+          </h1>
+
+          <p
+            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed"
+          >
+            Desarrollando
+            <span
+              class="text-gray-900 dark:text-white font-bold decoration-blue-500/50 underline decoration-2 underline-offset-4"
+              >software de alto impacto</span
+            >
+            y compartiendo el proceso con la comunidad de programación.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <a
+              href="#projects"
+              class="group relative px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold transition-all duration-300 hover:bg-blue-700 hover:-translate-y-1 shadow-lg shadow-blue-600/25 active:scale-95 overflow-hidden"
+            >
+              <span class="relative z-10 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-code-merge text-sm"></i> Ver Proyectos
+              </span>
+              <div
+                class="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+              ></div>
+            </a>
+
+            <a
+              href="#about"
+              class="px-8 py-4 bg-white dark:bg-white/5 text-gray-900 dark:text-white border border-gray-200 dark:border-white/10 rounded-2xl font-bold hover:bg-gray-50 dark:hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 active:scale-95"
+            >
+              Conóceme
+            </a>
+          </div>
+
+          <div class="relative group max-w-2xl mx-auto" id="terminal-container">
+            <div
+              class="absolute -inset-1 bg-linear-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"
+            ></div>
+
+            <div
+              class="relative bg-white/80 dark:bg-black/60 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10"
+            >
+              <div
+                class="flex items-center justify-between p-4 bg-gray-100/50 dark:bg-white/5 border-b border-gray-200 dark:border-white/10"
+              >
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 rounded-full bg-red-500/80 shadow-sm"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500/80 shadow-sm"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500/80 shadow-sm"></div>
+                </div>
+                <div class="flex items-center gap-2 text-[10px] font-mono text-gray-400">
+                  <i class="fa-solid fa-terminal text-[8px]"></i>
+                  <span>zsh — luigidevplay — 80x24</span>
+                </div>
+              </div>
+
+              <div class="p-6 font-mono text-left">
+                <div class="flex items-start">
+                  <span class="text-emerald-500 mr-3">➜</span>
+                  <span class="text-red-500 mr-3">~</span>
+                  <div class="flex-1">
+                    <span class="command-text text-green-500"></span>
+                    <span
+                      class="inline-block w-2 h-5 bg-red-500 ml-1 animate-pulse align-middle"
+                    ></span>
+                  </div>
+                </div>
+                <div
+                  class="mt-2 text-gray-400 dark:text-gray-500 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                >
+                  # Compilando ideas... [OK]
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-50 dark:bg-black/20 transition-all duration-500">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="text-center mb-16 px-4">
+          <h2
+            class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-gray-900 dark:text-white"
+          >
+            Mi
+            <span
+              class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent italic"
+            >
+              Arsenal
+            </span>
+            Técnico
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-linear-to-r from-blue-600 to-purple-500 mx-auto rounded-full mb-8"
+          ></div>
+          <p
+            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            Combinando el poder del <span class="text-blue-600 font-bold">código</span> con la
+            precisión del <span class="text-purple-500 font-bold">diseño visual</span> para crear
+            productos digitales únicos.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+          <div
+            class="group relative p-8 rounded-3xl bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:border-blue-500/50 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl group-hover:bg-blue-600/20 transition-all"
+            ></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:rotate-12 transition-all duration-500"
+              >
+                <i
+                  class="fa-solid fa-bezier-curve text-blue-600 group-hover:text-white text-2xl"
+                ></i>
+              </div>
+              <h3 class="text-xl font-black mb-3 dark:text-white tracking-tight">Diseño Pro</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Maestría en <span class="text-blue-600 font-bold">Photoshop</span> y Figma para
+                crear interfaces visuales impactantes y assets gráficos de alta calidad.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-8 rounded-3xl bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:border-purple-500/50 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-purple-600/10 rounded-full blur-3xl group-hover:bg-purple-600/20 transition-all"
+            ></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-16 h-16 bg-purple-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:-rotate-12 transition-all duration-500"
+              >
+                <i class="fa-solid fa-terminal text-purple-600 group-hover:text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-black mb-3 dark:text-white tracking-tight">Full Stack</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Arquitectura de software robusta con
+                <span class="text-purple-500 font-bold">Python y JavaScript</span>, enfocada en
+                código limpio y escalable.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-8 rounded-3xl bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:border-emerald-500/50 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-emerald-600/10 rounded-full blur-3xl group-hover:bg-emerald-600/20 transition-all"
+            ></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-16 h-16 bg-emerald-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all duration-500"
+              >
+                <i
+                  class="fa-solid fa-clapperboard text-emerald-600 group-hover:text-white text-2xl"
+                ></i>
+              </div>
+              <h3 class="text-xl font-black mb-3 dark:text-white tracking-tight">Creator Mode</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Producción de contenido técnico y
+                <span class="text-emerald-500 font-bold">gaming</span>, uniendo la comunidad dev con
+                el entretenimiento digital.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-8 rounded-3xl bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:border-red-500/50 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-red-600/10 rounded-full blur-3xl group-hover:bg-red-600/20 transition-all"
+            ></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-360 transition-all duration-700"
+              >
+                <i class="fa-solid fa-gauge-high text-red-600 group-hover:text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-black mb-3 dark:text-white tracking-tight">Performance</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Optimización total para que las aplicaciones vuelen, garantizando la
+                <span class="text-red-500 font-bold">mejor experiencia</span> de usuario posible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative overflow-hidden transition-all duration-500">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center px-4">
+          <div class="order-2 lg:order-1">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 dark:text-white tracking-tighter">
+              Tras el
+              <span
+                class="bg-linear-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent italic"
+              >
+                Código
+              </span>
+            </h2>
+
+            <p
+              class="text-xl md:text-2xl text-gray-800 dark:text-gray-200 mb-6 font-bold leading-tight"
+            >
+              Soy un <span class="text-blue-600">Desarrollador Full Stack</span> apasionado por
+              fusionar la lógica con la creatividad visual.
+            </p>
+
+            <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+              <p>
+                Mi enfoque principal es construir soluciones digitales robustas y escalables. Domino
+                el stack de
+                <span
+                  class="px-2 py-1 rounded-md bg-blue-500/10 text-blue-600 font-mono text-sm border border-blue-500/20 uppercase tracking-tighter"
+                  >Python (Flask)</span
+                >,
+                <span
+                  class="px-2 py-1 rounded-md bg-yellow-500/10 text-yellow-600 font-mono text-sm border border-yellow-500/20 uppercase tracking-tighter"
+                  >JavaScript</span
+                >
+                y
+                <span
+                  class="px-2 py-1 rounded-md bg-indigo-500/10 text-indigo-600 font-mono text-sm border border-indigo-500/20 uppercase tracking-tighter"
+                  >PostgreSQL</span
+                >, asegurando que cada línea de código contribuya a una experiencia de usuario
+                excepcional.
+              </p>
+
+              <p>
+                Como mente detrás de
+                <strong class="text-gray-900 dark:text-white font-black tracking-tight"
+                  >LuigiDevPlay</strong
+                >, no solo escribo código; diseño interfaces en
+                <span class="text-blue-500 font-semibold italic">Photoshop</span> y comparto mi
+                trayectoria como creador de contenido, conectando la ingeniería con la comunidad.
+              </p>
+
+              <div class="pt-4 border-t border-gray-100 dark:border-white/5">
+                <p class="mb-4">
+                  Soy un entusiasta de la tecnología que cree en el
+                  <span class="text-blue-500 font-bold italic">aprendizaje continuo</span>. Cada día
+                  busco nuevos retos para expandir mi stack técnico. Actualmente, estoy sumergido en
+                  el mundo de:
+                </p>
+
+                <div class="flex flex-wrap gap-3">
+                  <div
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20"
+                  >
+                    <i class="fa-solid fa-brain text-emerald-500 text-xs"></i>
+                    <span class="text-sm font-bold text-emerald-600 dark:text-emerald-400"
+                      >Machine Learning & Pandas</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-orange-500/5 border border-orange-500/20"
+                  >
+                    <i class="fa-solid fa-gamepad text-orange-500 text-xs"></i>
+                    <span class="text-sm font-bold text-orange-600 dark:text-orange-400"
+                      >Game Dev (C# & Blender)</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-cyan-500/5 border border-cyan-500/20"
+                  >
+                    <i class="fa-solid fa-rocket text-cyan-500 text-xs"></i>
+                    <span class="text-sm font-bold text-cyan-600 dark:text-cyan-400"
+                      >Nuevas Tecnologías</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-5 mt-10">
+              <a
+                href="#contact"
+                class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-500/25 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <i class="fa-solid fa-paper-plane text-sm"></i> Hablemos
+              </a>
+
+              <a
+                href="#"
+                class="px-8 py-4 bg-white dark:bg-white/5 text-gray-900 dark:text-white border border-gray-200 dark:border-white/10 rounded-2xl font-bold hover:border-blue-600/50 hover:bg-gray-50 dark:hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <i class="fa-solid fa-download text-sm"></i> Descargar CV
+              </a>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 flex justify-center relative">
+            <div
+              class="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-purple-600/20 blur-3xl rounded-full animate-pulse"
+            ></div>
+
+            <div class="relative group">
+              <div
+                class="w-64 h-64 md:w-85 md:h-85 rounded-[40px] overflow-hidden border-2 border-white dark:border-white/10 rotate-3 group-hover:rotate-0 transition-transform duration-500 shadow-2xl z-10 relative"
+              >
+                <img
+                  src="img/photo.jpg"
+                  alt="Luis Martínez"
+                  class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-500"
+                />
+              </div>
+
+              <div
+                class="absolute -bottom-6 -left-6 w-24 h-24 md:w-32 md:h-32 rounded-3xl overflow-hidden border-4 border-white dark:border-gray-900 shadow-2xl -rotate-6 group-hover:rotate-0 transition-all duration-500 z-20"
+              >
+                <img
+                  src="img/logo_luigi.jpg"
+                  alt="Logo LuigiDevPlay"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div
+                class="absolute -top-4 -right-4 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl z-20 border border-gray-100 dark:border-white/10 animate-bounce-slow"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/40"
+                  >
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                      Especialidad
+                    </p>
+                    <p class="text-sm font-black dark:text-white">UI/UX & Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gray-50 dark:bg-black/20 transition-all duration-500">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="text-center mb-16 px-4">
+          <h2
+            class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-gray-900 dark:text-white"
+          >
+            Dominio
+            <span
+              class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent italic"
+            >
+              Tecnológico
+            </span>
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-linear-to-r from-blue-600 to-purple-500 mx-auto rounded-full mb-8"
+          ></div>
+          <p
+            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium"
+          >
+            Stack de herramientas especializadas para el desarrollo de software y la creación de
+            activos digitales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-orange-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center group-hover:bg-orange-500 group-hover:rotate-6 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-brands fa-html5 text-orange-500 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >95%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Mastery</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              HTML5
+              <span
+                class="text-[10px] font-mono text-orange-500 bg-orange-500/10 px-2 py-0.5 rounded"
+                >Semantic</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[95%] h-full bg-linear-to-r from-orange-400 to-orange-600 rounded-full shadow-[4px_0_12px_rgba(249,115,22,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-blue-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center group-hover:bg-blue-500 group-hover:-rotate-6 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-brands fa-css3 text-blue-500 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >90%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Expert</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              CSS & Tailwind
+              <span class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-0.5 rounded"
+                >v4.0</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[90%] h-full bg-linear-to-r from-blue-400 to-blue-600 rounded-full shadow-[4px_0_12px_rgba(59,130,246,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-yellow-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-yellow-500/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-500 group-hover:scale-110 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-brands fa-js text-yellow-500 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >85%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              JS ES6+
+              <span
+                class="text-[10px] font-mono text-yellow-600 bg-yellow-500/10 px-2 py-0.5 rounded"
+                >Logic</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[85%] h-full bg-linear-to-r from-yellow-400 to-yellow-600 rounded-full shadow-[4px_0_12px_rgba(234,179,8,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-indigo-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-indigo-500/10 rounded-2xl flex items-center justify-center group-hover:bg-indigo-600 group-hover:rotate-12 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-brands fa-python text-indigo-500 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >80%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Backend</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              Python & Flask
+              <span
+                class="text-[10px] font-mono text-indigo-500 bg-indigo-500/10 px-2 py-0.5 rounded"
+                >API</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[80%] h-full bg-linear-to-r from-indigo-400 to-indigo-600 rounded-full shadow-[4px_0_12px_rgba(79,70,229,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-purple-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-purple-500/10 rounded-2xl flex items-center justify-center group-hover:bg-purple-600 group-hover:-rotate-12 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-solid fa-palette text-purple-600 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >90%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Creative</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              Photoshop
+              <span
+                class="text-[10px] font-mono text-purple-500 bg-purple-500/10 px-2 py-0.5 rounded"
+                >Assets</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[90%] h-full bg-linear-to-r from-purple-400 to-purple-600 rounded-full shadow-[4px_0_12px_rgba(147,51,234,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-emerald-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-emerald-500/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-inner"
+              >
+                <i
+                  class="fa-solid fa-database text-emerald-600 group-hover:text-white text-3xl"
+                ></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >75%</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Database</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              PostgreSQL
+              <span
+                class="text-[10px] font-mono text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded"
+                >SQL</span
+              >
+            </h3>
+            <div
+              class="relative w-full h-3 bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden border border-gray-200 dark:border-white/5"
+            >
+              <div
+                class="absolute top-0 left-0 w-[75%] h-full bg-linear-to-r from-emerald-400 to-emerald-600 rounded-full shadow-[4px_0_12px_rgba(16,185,129,0.4)] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-cyan-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden relative"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all"
+            ></div>
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-cyan-500/10 rounded-2xl flex items-center justify-center group-hover:bg-cyan-500 group-hover:rotate-12 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-solid fa-brain text-cyan-500 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >AI</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Future Tech</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              IA & Automatización
+              <span class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-0.5 rounded"
+                >Prompt Eng.</span
+              >
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              Implementación de modelos de <span class="text-cyan-500 font-bold">IA</span> y
+              automatización de flujos de trabajo para optimizar procesos digitales.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-green-600/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden relative"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-green-600/10 rounded-full blur-3xl group-hover:bg-green-600/20 transition-all"
+            ></div>
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-green-600/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-inner"
+              >
+                <i class="fa-solid fa-chart-pie text-green-600 group-hover:text-white text-3xl"></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >Data</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Analytics</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              Power BI & Excel
+              <span class="text-[10px] font-mono text-green-600 bg-green-600/10 px-2 py-0.5 rounded"
+                >Pro Data</span
+              >
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              Análisis profundo y visualización de datos mediante
+              <span class="text-green-600 font-bold">Dashboards interactivos</span> para la toma de
+              decisiones.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-slate-500/30 transition-all duration-500 shadow-xl shadow-gray-200/20 dark:shadow-none overflow-hidden relative"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-32 h-32 bg-slate-500/10 rounded-full blur-3xl group-hover:bg-slate-500/20 transition-all"
+            ></div>
+            <div class="flex items-center justify-between mb-8">
+              <div
+                class="w-16 h-16 bg-slate-500/10 rounded-2xl flex items-center justify-center group-hover:-rotate-12 transition-all duration-500 shadow-inner"
+              >
+                <i
+                  class="fa-solid fa-screwdriver-wrench text-slate-500 group-hover:text-white text-3xl"
+                ></i>
+              </div>
+              <div class="text-right">
+                <span class="block text-2xl font-black text-gray-800 dark:text-white leading-none"
+                  >IT</span
+                >
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest"
+                  >Hardware</span
+                >
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white flex items-center gap-2">
+              Soporte Técnico
+              <span class="text-[10px] font-mono text-slate-500 bg-slate-500/10 px-2 py-0.5 rounded"
+                >Hard/Soft</span
+              >
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              Mantenimiento preventivo, diagnóstico y reparación avanzada de
+              <span class="text-slate-500 font-bold">PC y Laptops</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 transition-all duration-500">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="text-center mb-16 px-4">
+          <h2
+            class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-gray-900 dark:text-white"
+          >
+            Proyectos
+            <span
+              class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent italic"
+              >Destacados</span
+            >
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-linear-to-r from-blue-600 to-purple-500 mx-auto rounded-full mb-8"
+          ></div>
+          <p
+            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            Una selección de soluciones técnicas y creativas desarrolladas para resolver problemas
+            reales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+          <div
+            class="group bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-white/10 hover:border-blue-500/50 transition-all duration-500 shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-3"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <div
+                class="absolute inset-0 bg-linear-to-br from-blue-600 to-indigo-900 opacity-20"
+              ></div>
+              <img
+                src="img/libre_precio.png"
+                alt="Libre-Precio App"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter shadow-lg"
+              >
+                En Producción
+              </div>
+            </div>
+
+            <div class="p-8">
+              <h3
+                class="text-2xl font-black mb-3 dark:text-white group-hover:text-blue-600 transition-colors tracking-tight"
+              >
+                Libre-Precio
+              </h3>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">
+                Este fue uno de mis
+                <span class="text-blue-600 font-bold italic">primeros proyectos significativos</span
+                >. Es una web app estratégica diseñada para emprendedores que permite calcular
+                costos operativos y márgenes con precisión.
+                <span class="dark:text-gray-300 font-medium text-gray-800"
+                  >Sigue en mejora continua</span
+                >
+                para ofrecer cada día mayor utilidad a la comunidad.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-blue-500/20"
+                  >Flask</span
+                >
+                <span
+                  class="px-3 py-1 bg-cyan-500/10 text-cyan-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-cyan-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-3 py-1 bg-indigo-500/10 text-indigo-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-indigo-500/20"
+                  >Vercel</span
+                >
+              </div>
+
+              <div
+                class="flex items-center justify-between border-t border-gray-100 dark:border-white/5 pt-6"
+              >
+                <a
+                  href="https://youtu.be/yROuZitG1Vk?si=IIk52sKrr02s0vBG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-blue-600 font-black text-sm hover:gap-2 transition-all"
+                >
+                  <i class="fa-brands fa-youtube mr-2 text-lg"></i> VER DEMO
+                </a>
+
+                <a
+                  href="https://github.com/LuigiDevPlay/LibrePrecio-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-black dark:hover:text-white transition-colors text-2xl"
+                  title="Ver Código Fuente"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-white/10 hover:border-purple-500/50 transition-all duration-500 shadow-xl hover:shadow-purple-500/20 transform hover:-translate-y-3"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <div
+                class="absolute inset-0 bg-linear-to-br from-purple-600 to-pink-900 opacity-20"
+              ></div>
+              <img
+                src="img/school.png"
+                alt="Plataforma Escolar"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 right-4 bg-purple-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter shadow-lg"
+              >
+                Institucional
+              </div>
+            </div>
+
+            <div class="p-8">
+              <h3
+                class="text-2xl font-black mb-3 dark:text-white group-hover:text-purple-500 transition-colors tracking-tight"
+              >
+                Sistema Escolar
+              </h3>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">
+                Este sistema multifuncional representa mi
+                <span class="text-purple-600 font-bold italic">tesis de grado</span>. Una plataforma
+                robusta que gestiona expedientes, calificaciones y administración escolar,
+                desplegada con arquitectura moderna en la nube.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 bg-purple-500/10 text-purple-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-purple-500/20"
+                  >Neon (DB)</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-blue-500/20"
+                  >Render</span
+                >
+                <span
+                  class="px-3 py-1 bg-pink-500/10 text-pink-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-pink-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-500/10 text-yellow-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-yellow-500/20"
+                  >JS</span
+                >
+              </div>
+
+              <div class="flex flex-col gap-4 border-t border-gray-100 dark:border-white/5 pt-6">
+                <div class="flex items-center justify-between">
+                  <a
+                    href="https://eb-isidro-ramirez.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center text-purple-500 font-black text-sm hover:gap-2 transition-all"
+                  >
+                    <i class="fa-solid fa-earth-americas mr-2 text-lg"></i> EXPLORAR DEMO
+                  </a>
+                  <div class="flex items-center gap-2 group/lock">
+                    <span class="text-[10px] font-bold text-gray-500">PROYECTO PRIVADO</span>
+                    <i
+                      class="fa-solid fa-lock text-gray-400 group-hover/lock:text-purple-500 transition-colors"
+                    ></i>
+                  </div>
+                </div>
+
+                <a
+                  href="#contact"
+                  class="text-center py-2 bg-purple-500/5 hover:bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-xl text-[11px] font-black uppercase tracking-widest border border-purple-500/10 transition-all"
+                >
+                  ¿Necesitas un sistema similar? Contáctame
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-dashed border-gray-300 dark:border-white/20 hover:border-emerald-500/50 transition-all duration-500 shadow-xl transform hover:-translate-y-3 relative"
+          >
+            <div
+              class="absolute inset-0 bg-black/40 backdrop-blur-[2px] z-20 flex flex-col items-center justify-center text-center p-6 opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+            >
+              <i class="fa-solid fa-gamepad text-5xl text-emerald-500 mb-4 animate-bounce"></i>
+              <h4 class="text-white font-black text-xl uppercase italic">Loading Next Level...</h4>
+              <p class="text-gray-300 text-xs mt-2 font-mono">Game Dev Project en progreso</p>
+            </div>
+
+            <div
+              class="h-64 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all"
+            >
+              <div
+                class="absolute inset-0 bg-linear-to-br from-emerald-600 to-green-900 opacity-20"
+              ></div>
+              <img
+                src="img/lingo_stack.png"
+                alt="Upcoming Game"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="p-8 group">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-[10px] font-black uppercase tracking-widest border border-emerald-500/20 mb-4 animate-pulse"
+              >
+                <span class="relative flex h-2 w-2">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  ></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Próximo Proyecto
+              </div>
+
+              <h3
+                class="text-3xl font-black mb-3 dark:text-white group-hover:text-emerald-500 transition-colors tracking-tighter italic"
+              >
+                LingoStack
+              </h3>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">
+                Una innovadora fusión entre
+                <span class="text-emerald-600 font-bold italic text-base"
+                  >Tetris y aprendizaje de idiomas</span
+                >. Los bloques son frases que caen; el usuario debe traducir correctamente para
+                "limpiar" la pantalla antes de que se acumulen. Gamificando el aprendizaje de
+                vocabulario.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 bg-emerald-500/10 text-emerald-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-emerald-500/20"
+                  >Canvas JS</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-500/10 text-yellow-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-yellow-500/20"
+                  >Game Logic</span
+                >
+                <span
+                  class="px-3 py-1 bg-red-500/10 text-red-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-red-500/20"
+                  >EdTech</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-blue-500/20"
+                  >API Translation</span
+                >
+              </div>
+
+              <div
+                class="flex items-center justify-between border-t border-gray-100 dark:border-white/5 pt-6"
+              >
+                <span class="text-[10px] font-black text-gray-400 tracking-widest uppercase"
+                  >En Desarrollo Activo</span
+                >
+                <div class="flex gap-4">
+                  <i class="fa-solid fa-code text-gray-300 dark:text-gray-600"></i>
+                  <i class="fa-solid fa-language text-emerald-500"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-24 bg-gray-50 dark:bg-black/40 transition-all duration-500">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="text-center mb-16 px-4">
+          <h2
+            class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-gray-900 dark:text-white"
+          >
+            Hablemos de tu
+            <span
+              class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent italic"
+              >Próximo Proyecto</span
+            >
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-linear-to-r from-blue-600 to-purple-500 mx-auto rounded-full mb-8"
+          ></div>
+          <p
+            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            ¿Tienes una idea en mente o buscas mejorar tu infraestructura digital? Estoy listo para
+            colaborar.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 px-4 italic">
+          <div class="lg:col-span-1 flex flex-col gap-6 font-medium">
+            <div
+              class="bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-blue-500/50 transition-all duration-300 group shadow-xl shadow-gray-200/20 dark:shadow-none"
+            >
+              <div
+                class="w-14 h-14 bg-blue-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500"
+              >
+                <i class="fa-solid fa-envelope text-blue-600 group-hover:text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-black mb-2 dark:text-white uppercase tracking-tighter">
+                Email
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 font-mono text-sm break-all">
+                lg6347697@gmail.com
+              </p>
+            </div>
+
+            <div
+              class="bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-purple-500/50 transition-all duration-300 group shadow-xl shadow-gray-200/20 dark:shadow-none"
+            >
+              <div
+                class="w-14 h-14 bg-purple-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-600 transition-all duration-500"
+              >
+                <i
+                  class="fa-solid fa-map-location-dot text-purple-600 group-hover:text-white text-2xl"
+                ></i>
+              </div>
+              <h3 class="text-xl font-black mb-2 dark:text-white uppercase tracking-tighter">
+                Ubicación
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">Venezuela</p>
+            </div>
+
+            <div
+              class="bg-white dark:bg-white/5 p-8 rounded-4xl border border-gray-100 dark:border-white/10 hover:border-indigo-500/50 transition-all duration-300 group shadow-xl shadow-gray-200/20 dark:shadow-none"
+            >
+              <div
+                class="w-14 h-14 bg-indigo-600/10 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fa-solid fa-share-nodes text-indigo-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-black mb-4 dark:text-white uppercase tracking-tighter">
+                Redes Sociales
+              </h3>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/LuigiDevPlay"
+                  target="_blank"
+                  class="w-12 h-12 bg-gray-100 dark:bg-white/10 rounded-xl flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-black hover:text-white transition-all shadow-lg active:scale-90"
+                >
+                  <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/luigi-martinez-a1b579387/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  class="w-12 h-12 bg-gray-100 dark:bg-white/10 rounded-xl flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-600 hover:text-white transition-all shadow-lg active:scale-90"
+                >
+                  <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@luigiDevPlay"
+                  target="_blank"
+                  class="w-12 h-12 bg-gray-100 dark:bg-white/10 rounded-xl flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-red-600 hover:text-white transition-all shadow-lg active:scale-90"
+                >
+                  <i class="fa-brands fa-youtube text-xl"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/luigidevplay/"
+                  target="_blank                     "
+                  class="w-12 h-12 bg-gray-100 dark:bg-white/10 rounded-xl flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-linear-to-tr from-yellow-500 via-pink-500 to-purple-600 hover:text-white transition-all shadow-lg active:scale-90"
+                >
+                  <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2">
+            <form
+              id="contactForm"
+              class="bg-white dark:bg-white/5 p-8 md:p-12 rounded-[2.5rem] border border-gray-100 dark:border-white/10 shadow-2xl relative overflow-hidden group"
+            >
+              <div
+                class="absolute -right-20 -bottom-20 w-64 h-64 bg-blue-600/5 rounded-full blur-3xl group-hover:bg-blue-600/10 transition-all duration-700"
+              ></div>
+
+              <h3
+                class="text-3xl font-black mb-10 dark:text-white flex items-center tracking-tighter italic"
+              >
+                <span
+                  class="w-12 h-2 bg-linear-to-r from-blue-600 to-purple-600 rounded-full mr-4"
+                ></span>
+                Enviar Mensaje
+              </h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 font-medium">
+                <div class="space-y-3">
+                  <label
+                    for="name"
+                    class="block text-sm font-black text-gray-700 dark:text-gray-300 uppercase tracking-widest ml-1"
+                    >Tu Nombre</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ej. Luigi"
+                    required
+                    class="w-full px-6 py-4 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white focus:ring-4 focus:ring-blue-600/20 focus:border-blue-600 transition-all duration-300 outline-none shadow-inner"
+                  />
+                </div>
+                <div class="space-y-3">
+                  <label
+                    for="email"
+                    class="block text-sm font-black text-gray-700 dark:text-gray-300 uppercase tracking-widest ml-1"
+                    >Tu Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="ejemplo@correo.com"
+                    required
+                    class="w-full px-6 py-4 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white focus:ring-4 focus:ring-blue-600/20 focus:border-blue-600 transition-all duration-300 outline-none shadow-inner"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-10 space-y-3">
+                <label
+                  for="message"
+                  class="block text-sm text-gray-700 dark:text-gray-300 uppercase tracking-widest ml-1 font-medium"
+                  >Descripción del Proyecto</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Cuéntame sobre tu idea o consulta técnica..."
+                  required
+                  class="w-full px-6 py-4 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white focus:ring-4 focus:ring-blue-600/20 focus:border-blue-600 transition-all duration-300 outline-none resize-none shadow-inner placeholder:text-gray-400"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-4 md:py-5 bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 text-white rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300 active:scale-95 flex items-center justify-center gap-2 md:gap-4 uppercase tracking-tight italic cursor-pointer overflow-hidden whitespace-nowrap"
+              >
+                <span class="relative z-10">Despegar Proyecto</span>
+                <i
+                  class="fa-solid fa-paper-plane animate-pulse relative z-10 text-sm sm:text-base md:text-xl"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-black/95 py-16 border-t border-gray-100 dark:border-white/5">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-8 px-4">
+          <div class="flex items-center group cursor-default">
+            <span
+              class="text-3xl font-black tracking-tighter dark:text-white transition-all duration-500 group-hover:tracking-normal"
+            >
+              Luigi<span class="text-blue-600">Dev</span>
+            </span>
+            <span class="text-purple-500 text-4xl ml-1 animate-pulse font-black italic">Play.</span>
+          </div>
+
+          <nav>
+            <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+              <li>
+                <a
+                  href="#features"
+                  class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-black transition-all"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-black transition-all"
+                  >Sobre Mí</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-black transition-all"
+                  >Habilidades</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-black transition-all"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-black transition-all"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex gap-5">
+            <a
+              href="https://github.com/LuigiDevPlay"
+              target="_blank"
+              aria-label="GitHub"
+              class="w-12 h-12 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 border border-gray-100 dark:border-white/10 hover:border-black hover:bg-black hover:text-white transition-all duration-500 shadow-lg shadow-gray-200/50 dark:shadow-none"
+            >
+              <i class="fa-brands fa-github text-xl"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/luigi-martinez-a1b579387/"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="w-12 h-12 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 border border-gray-100 dark:border-white/10 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-500 shadow-lg shadow-gray-200/50 dark:shadow-none"
+            >
+              <i class="fa-brands fa-linkedin-in text-xl"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@luigiDevPlay"
+              target="_blank"
+              aria-label="YouTube"
+              class="w-12 h-12 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 border border-gray-100 dark:border-white/10 hover:border-red-600 hover:bg-red-600 hover:text-white transition-all duration-500 shadow-lg shadow-gray-200/50 dark:shadow-none"
+            >
+              <i class="fa-brands fa-youtube text-xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/luigidevplay/"
+              target="_blank"
+              aria-label="Instagram"
+              class="w-12 h-12 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 border border-gray-100 dark:border-white/10 hover:border-pink-500 hover:bg-linear-to-tr from-yellow-500 via-pink-500 to-purple-600 hover:text-white transition-all duration-500 shadow-lg shadow-gray-200/50 dark:shadow-none"
+            >
+              <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-center px-4"
+        >
+          <p class="text-gray-500 dark:text-gray-500 text-sm font-medium tracking-tight">
+            &copy; 2026
+            <span class="font-black text-gray-800 dark:text-gray-200 italic">LuigiDevPlay</span>.
+            Cifrando ideas, compilando el futuro.
+          </p>
+
+          <div
+            class="flex items-center text-xs font-bold uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-white/5 px-4 py-2 rounded-full border border-gray-200 dark:border-white/10"
+          >
+            <span>Desarrollado con</span>
+            <i class="fa-solid fa-heart mx-2 text-red-500 animate-bounce"></i>
+            <span>en Venezuela</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
