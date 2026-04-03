@@ -78,41 +78,70 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // --- 4. FORMULARIO DE CONTACTO ---
+  // --- 4. FORMULARIO DE CONTACTO CON FORMSPREE (AJAX) ---
   const contactForm = document.getElementById("contactForm");
+
   if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener("submit", async function (e) {
       e.preventDefault();
 
       const button = contactForm.querySelector('button[type="submit"]');
       const originalContent = button.innerHTML;
+      const formData = new FormData(this);
 
-      // Simulación de envío
+      // Estado de carga visual
       button.disabled = true;
-      button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin mr-2"></i> Sending...';
+      button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin mr-2"></i> Enviando...';
 
-      // Captura de datos
-      const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-      };
+      try {
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
 
-      console.log("Form Submitted:", formData);
+        if (response.ok) {
+          // ÉXITO
+          button.innerHTML = '<i class="fa-solid fa-check mr-2"></i> ¡Mensaje Enviado! 🚀';
 
-      // Feedback visual tras 1.5s
-      setTimeout(() => {
-        button.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Message Sent!';
-        button.classList.replace("bg-gradient-to-r", "bg-green-600"); // Cambio de color visual
+          // Cambiamos el estilo a verde éxito
+          button.classList.remove(
+            "bg-linear-to-r",
+            "from-blue-600",
+            "via-indigo-600",
+            "to-purple-600",
+          );
+          button.classList.add("bg-green-600");
 
-        contactForm.reset();
+          contactForm.reset();
+
+          // Restaurar botón después de 4 segundos
+          setTimeout(() => {
+            button.disabled = false;
+            button.innerHTML = originalContent;
+            button.classList.remove("bg-green-600");
+            button.classList.add(
+              "bg-linear-to-r",
+              "from-blue-600",
+              "via-indigo-600",
+              "to-purple-600",
+            );
+          }, 4000);
+        } else {
+          throw new Error("Error en la respuesta del servidor");
+        }
+      } catch (error) {
+        // ERROR
+        button.disabled = false;
+        button.innerHTML = '<i class="fa-solid fa-xmark mr-2"></i> Error al enviar';
+        console.error("Formspree Error:", error);
 
         setTimeout(() => {
-          button.disabled = false;
           button.innerHTML = originalContent;
-          button.classList.replace("bg-green-600", "bg-gradient-to-r");
-        }, 3000);
-      }, 1500);
+        }, 4000);
+      }
     });
   }
 
