@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- 6. ANIMACIÓN DE TERMINAL (MÁQUINA DE ESCRIBIR) ---
   const terminalText = document.querySelector(".command-text");
   if (terminalText) {
-    const fullText = "git clone https://github.com/luigiProGame/Personal-Portfolio.git";
+    const fullText = "git clone https://github.com/LuigiDevPlay/portfolio.git";
     terminalText.textContent = "";
     let index = 0;
 

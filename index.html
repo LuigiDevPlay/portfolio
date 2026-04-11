@@ -1307,40 +1307,35 @@
           </div>
 
           <div
-            class="group bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-dashed border-gray-300 dark:border-white/20 hover:border-emerald-500/50 transition-all duration-500 shadow-xl transform hover:-translate-y-3 relative"
+            class="group bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-white/10 hover:border-emerald-500/50 transition-all duration-500 shadow-xl transform hover:-translate-y-3 relative"
           >
-            <div
-              class="absolute inset-0 bg-black/40 backdrop-blur-[2px] z-20 flex flex-col items-center justify-center text-center p-6 opacity-100 group-hover:opacity-0 transition-opacity duration-500"
-            >
-              <i class="fa-solid fa-gamepad text-5xl text-emerald-500 mb-4 animate-bounce"></i>
-              <h4 class="text-white font-black text-xl uppercase italic">Loading Next Level...</h4>
-              <p class="text-gray-300 text-xs mt-2 font-mono">Game Dev Project en progreso</p>
-            </div>
-
-            <div
-              class="h-64 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all"
-            >
+            <div class="h-64 relative overflow-hidden">
               <div
-                class="absolute inset-0 bg-linear-to-br from-emerald-600 to-green-900 opacity-20"
+                class="absolute inset-0 bg-linear-to-br from-emerald-600 to-green-900 opacity-10"
               ></div>
               <img
                 src="assets/img/lingo_stack.png"
-                alt="Upcoming Game"
+                alt="LingoStack Game"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
+
+              <a
+                href="https://luigidevplay.github.io/lingostack/"
+                target="_blank"
+                class="absolute bottom-6 right-6 w-14 h-14 bg-emerald-500 text-white rounded-2xl flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 shadow-xl shadow-emerald-500/40 z-30"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+              </a>
             </div>
 
-            <div class="p-8 group">
+            <div class="p-8">
               <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-[10px] font-black uppercase tracking-widest border border-emerald-500/20 mb-4 animate-pulse"
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-[10px] font-black uppercase tracking-widest border border-emerald-500/20 mb-4"
               >
                 <span class="relative flex h-2 w-2">
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
-                  ></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                Próximo Proyecto
+                Beta Pública
               </div>
 
               <h3
@@ -1354,8 +1349,7 @@
                 <span class="text-emerald-600 font-bold italic text-base"
                   >Tetris y aprendizaje de idiomas</span
                 >. Los bloques son frases que caen; el usuario debe traducir correctamente para
-                "limpiar" la pantalla antes de que se acumulen. Gamificando el aprendizaje de
-                vocabulario.
+                "limpiar" la pantalla.
               </p>
 
               <div class="flex flex-wrap gap-2 mb-8">
@@ -1368,10 +1362,6 @@
                   >Game Logic</span
                 >
                 <span
-                  class="px-3 py-1 bg-red-500/10 text-red-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-red-500/20"
-                  >EdTech</span
-                >
-                <span
                   class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-blue-500/20"
                   >API Translation</span
                 >
@@ -1380,10 +1370,23 @@
               <div
                 class="flex items-center justify-between border-t border-gray-100 dark:border-white/5 pt-6"
               >
-                <span class="text-[10px] font-black text-gray-400 tracking-widest uppercase"
-                  >En Desarrollo Activo</span
-                >
                 <div class="flex gap-4">
+                  <a
+                    href="https://github.com/LuigiDevPlay/lingostack"
+                    target="_blank"
+                    class="text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                  >
+                    <i class="fa-brands fa-github text-xl"></i>
+                  </a>
+                  <a
+                    href="https://luigidevplay.github.io/lingostack/"
+                    target="_blank"
+                    class="text-gray-400 hover:text-emerald-500 transition-colors"
+                  >
+                    <i class="fa-solid fa-earth-americas text-xl"></i>
+                  </a>
+                </div>
+                <div class="flex gap-2">
                   <i class="fa-solid fa-code text-gray-300 dark:text-gray-600"></i>
                   <i class="fa-solid fa-language text-emerald-500"></i>
                 </div>
